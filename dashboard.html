@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="sideGap2vw">
+            <div class="icon">
+                <i class="fa-regular fa-lightbulb"
+                    style="color: #F9D217;transform: rotate(-25deg);font-size: 30px;"></i>
+                <p class="fontCalibri">Quantum</p>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-link laptopNav"><a href="#d">DASHBOARD</a></li>
+                    <li class="nav-link laptopNav"><a href="#">CONTENT</a></li>
+                    <li class="nav-link laptopNav"><a href="#">USERS</a></li>
+                    <li class="nav-link laptopNav"><a href="#">REPORTS</a></li>
+                    <li class="nav-link laptopNav"><a href="#">ADMIN</a></li>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div class="profileImg" style="padding:0px 1.4vw">
+                        <img src="images/person1.jpg" alt="Your Profile" height="32px" width="32px"
+                            style="cursor:pointer;border:2px solid #3FD28B;border-radius: 50%;object-fit: cover;">
+                    </div>
+                </ul>
+                <i class="fa-solid fa-bars hamburger "  style="color: white;display: none;" ></i>            </nav>
+        </header>
+        <div class="dashboard sideGap2vw">
+            <span></span>
+            <li class="select courses"><i class="fa-solid fa-book-bookmark"></i><span style="font-size: 22px;">4</span>
+                &nbsp;
+                Courses</li>
+            <li class="select"><i class="fa-solid fa-user-group"></i><span style="font-size: 22px;">4</span> &nbsp;
+                Classes</li>
+            <div class="sortSections">
+                <p>Showing 4 of 4 courses</p>
+                <div class="filter">
+                    <label for="sort">Sort By: </label>
+                    <select name="sort" id="sort">
+                        <option value="courseName">Course Name</option>
+                        <option value="time">Time</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="individualCard">
+                    <div class="expired"></div>
+                    <div class="info">
+                        <img src="images/acceleration.png" alt="">
+                        <div class="details">
+                            <p style="font-size: 18px;color: black;font-weight: bold;width: 80%;" class="lineClamp">Acceleration</p>
+                            <p>Physics &nbsp;|&nbsp; Grade <span style="color: green;">7+2</span> </p>
+                            <p><b>4</b> Units &nbsp; <b>18</b> Lessons &nbsp; <b>24</b> Topics</p>
+
+                            <select name="classess" id="classess">
+                                <option value="mrFrankClassB">Mr. Franks Class B</option>
+                                <option value="John">Mr. John Class A</option>
+                            </select>
+                            <p>50 Students &nbsp; 21-Jan-2020 - 21-Aug-2020</p>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                    </div>
+                    <div class="operations">
+                        <i class="fa-solid fa-eye" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-calendar-day" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-briefcase" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-square-poll-vertical" style="color: #1F7A54;"></i>
+                    </div>
+                </div>
+                <div class="individualCard">
+
+                    <div class="expired"></div>
+                    <div class="info">
+                        <img src="images/displacement.png" alt="">
+                        <div class="details">
+                            <p style="font-size: 18px;color: black;font-weight: bold;width: 85%;"  class="lineClamp">Displacement, Velocity and Speed</p>
+                            <p>Physics 2 &nbsp;|&nbsp; Grade <span style="color: green;">6+3</span> </p>
+                            <p><b>2</b> Units &nbsp; <b>15</b> Lessons &nbsp; <b>20</b> Topics</p>
+
+                            <select name="classess" id="classess">
+                                <option value="" disabled selected>No Classes</option>
+                            </select>
+                            <p>50 Students &nbsp; 21-Jan-2020 - 21-Aug-2020</p>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                    </div>
+                    <div class="operations">
+                        <i class="fa-solid fa-eye" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-calendar-day" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-briefcase" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-square-poll-vertical" style="color: #1F7A54;"></i>
+                    </div>
+                </div>
+                <div class="individualCard">
+
+                    <div class="expired"></div>
+                    <div class="info">
+                        <img src="images/biology.png" alt="">
+                        <div class="details">
+                            <p style="font-size: 18px;color: black;font-weight: bold;width: 80%;" class="lineClamp">Introduction to Biology: Micro organisms and how they affect environment</p>
+                            <p>Biology &nbsp;|&nbsp; Grade <span style="color: green;">4+1</span> </p>
+                            <p><b>5</b> Units &nbsp; <b>16</b> Lessons &nbsp; <b>22</b> Topics</p>
+
+                            <select name="classess" id="classess">
+                                <option value="mrFrankClassB">All Classes</option>
+                                <option value="John">Mr. John Class A</option>
+                            </select>
+                            <p>300 Students &nbsp; 21-Jan-2020 - 21-Aug-2020</p>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                    </div>
+                    <div class="operations">
+                        <i class="fa-solid fa-eye" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-calendar-day" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-briefcase" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-square-poll-vertical" style="color: #1F7A54;"></i>
+                    </div>
+                </div>
+                <div class="individualCard">
+
+                    <div class="expired" style="color: red;background-color: #FFE4E6;">Expired</div>
+                    <div class="info">
+                        <img src="images/maths.png" alt="">
+                        <div class="details">
+                            <p style="font-size: 18px;color: black;font-weight: bold;width: 80%;" class="lineClamp">Introduction to High School Mathematics</p>
+                            <p>Mathematics &nbsp;|&nbsp; Grade <span style="color: green;">8+3</span> </p>
+                            <p><b>4</b> Units &nbsp; <b>18</b> Lessons &nbsp; <b>24</b> Topics</p>
+
+                            <select name="classess" id="classess">
+                                <option value="mrFrankClassB">Mr. Franks Class B</option>
+                                <option value="John">Mr. John Class A</option>
+                            </select>
+                            <p>44 Students &nbsp; 14-Oct-2019 - 20-Oct-2020</p>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                    </div>
+                    <div class="operations">
+                        <i class="fa-solid fa-eye" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-calendar-day" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-briefcase" style="color: #1F7A54;"></i>
+                        <i class="fa-solid fa-square-poll-vertical" style="color: #1F7A54;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moreInfo">
+            <a href="#" style="color: #3FD28B; text-decoration: none;">About</a>&nbsp; | &nbsp;<a href="#"
+                style="color: #3FD28B; text-decoration: none;">Contact Us</a>
+        </div>
+        <footer>
+
+            <div class="icon">
+                <i class="fa-regular fa-lightbulb"
+                    style="color: #F9D217;transform: rotate(-25deg);font-size: 18px;"></i>
+                <p style=" color: black; font-weight: bold;" class="fontCalibri">Quantum</p>
+            </div>
+            <p>&nbsp; | &nbsp;Copyright &copy; 2020-2021 &nbsp; Zeus Systems Pvt. Ltd.&nbsp; All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
